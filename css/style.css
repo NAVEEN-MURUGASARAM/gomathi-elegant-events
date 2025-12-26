@@ -1004,7 +1004,6 @@ textarea.input-control {
 .services-track {
   display: flex;
   gap: 30px;
-  animation: scroll 50s linear infinite;
   width: max-content;
 }
 
