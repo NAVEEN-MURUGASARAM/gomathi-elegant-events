@@ -1090,14 +1090,16 @@ textarea.input-control {
 
 /* Responsive for Services Carousel */
 @media(max-width: 767px) {
-  .service-card {
-    min-width: calc(100vw - 60px);
-    flex: 0 0 calc(100vw - 60px);
-  }
-
   .services-track {
-    gap: 20px;
-  }
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.service-card {
+  flex: 0 0 240px;
+  min-width: 240px;
+}
 }
 .service-link {
   text-decoration: none;
@@ -1229,5 +1231,23 @@ textarea.input-control {
 
   .cta p {
     font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+
+  .services-carousel-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .services-track {
+    display: flex;
+    gap: 16px;
+  }
+
+  .service-card {
+    flex: 0 0 calc(100vw - 30px); /* 🔥 ONE CARD FULL WIDTH */
+    max-width: calc(100vw - 30px);
+    min-width: calc(100vw - 30px);
   }
 }
